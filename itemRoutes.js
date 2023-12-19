@@ -59,7 +59,7 @@ router.delete("/:name", (req, res) => {
   const lengthBeforeDelete = items.length;
   items = items.filter((i) => i.name !== req.params.name);
   if (items.length < lengthBeforeDelete) {
-    return res.status(200).json({ message: "Successfully deleted!" });
+    return res.status(200).json({ message: "Item deleted successfully!" });
   }
   return res.status(404).json({ message: "Item was not found!" });
 });
