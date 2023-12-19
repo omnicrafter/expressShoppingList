@@ -1,3 +1,3 @@
-global.items = [];
+items = [];
 
 module.exports = items;
